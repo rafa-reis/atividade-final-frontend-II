@@ -1,0 +1,100 @@
+@import "./public/css/style-theme.css";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  background-image: linear-gradient(to right, #ff4b2b, #ff416c);
+  color: white;
+}
+
+footer {
+  background-color: #222;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 999;
+}
+
+.btn-add {
+  color: #ff4b2b;
+  position: fixed;
+  bottom: 100px;
+  right: calc(50vw - 30px);
+  text-align: center;
+}
+
+button.botao-editar {
+  background-color: var(--bs-green) !important;
+  color: #ffff !important;
+}
+
+button.botao-apagar {
+  background-color: var(--bs-danger) !important;
+  color: #ffff !important;
+}
+
+.botao-send {
+  color: #ff416c;
+  font-size: 22px;
+}
+
+.color-title {
+  color: #ff416c;
+}
+
+.botao-alterar {
+  color: var(--bs-purple);
+  font-size: 22px;
+}
+
+.color-title-two {
+  color: var(--bs-purple);
+}
+
+@media (max-width: 680px) {
+  .btn-add {
+    color: #ff4b2b;
+    position: fixed;
+    bottom: 4rem;
+    right: 2rem;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  svg.book-check {
+    width: 22px;
+  }
+
+  thead {
+    display: none;
+  }
+
+  td,
+  tr,
+  tbody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .botao-editar,
+  .botao-apagar {
+    width: 50px;
+    height: 50px;
+  }
+
+  .btn-align {
+    display: flex;
+    flex-direction: row;
+  }
+}
